@@ -1,4 +1,4 @@
-# CTS CNS5.0 Python FSE Exercises
+# CTS DNS5.0 Python FSE Exercises
 
 ## Python Module
 Completed all 55 Python exercises covering:
