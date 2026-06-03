@@ -1,0 +1,15 @@
+# Exercise 21
+
+def fibonacci(n):
+	if n <= 0:
+		return []
+
+	seq = [0, 1]
+	while len(seq) < n:
+		seq.append(seq[-1] + seq[-2])
+
+	return seq[:n]
+
+
+print(fibonacci(7))
+
