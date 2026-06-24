@@ -1,0 +1,34 @@
+Task 2: Verify Normalisation
+
+1NF (First Normal Form)
+
+-- Every column contains atomic values.
+-- No column stores multiple values in a single field.
+-- Example violation:
+-- phone_numbers = '9876543210,9123456780'
+-- This would violate 1NF.
+
+2NF (Second Normal Form)
+
+-- All non-key attributes depend completely on the primary key.
+-- In the enrollments table, grade and enrollment_date
+-- depend on the enrollment record and not on part of a key.
+
+3NF (Third Normal Form)
+
+-- No transitive dependency exists.
+-- Department information is stored in departments table.
+-- Students store only department_id.
+-- If dept_name were stored in students table,
+-- it would create:
+-- student_id -> department_id -> dept_name
+-- which violates 3NF.
+
+Therefore the schema satisfies 1NF, 2NF and 3NF.
+
+3NF Analysis for enrollments table:
+
+-- enrollment_id uniquely identifies each enrollment.
+-- enrollment_date and grade depend directly on enrollment_id.
+-- No non-key attribute depends on another non-key attribute.
+-- Therefore the enrollments table satisfies 3NF.
