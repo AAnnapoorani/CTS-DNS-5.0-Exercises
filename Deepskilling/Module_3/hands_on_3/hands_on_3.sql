@@ -97,11 +97,9 @@ SELECT * FROM vw_student_enrollment_summary WHERE gpa > 3;
 -- Attempt Update
 
 UPDATE vw_student_enrollment_summary SET student_name='Demo' WHERE student_id=1;
+
 -- Exibits error: cannot update view "vw_student_enrollment_summary" because it contains non-updatable fields
--- PostgreSQL throws an error because
--- complex views involving multiple tables,
--- GROUP BY and aggregate functions are
--- not automatically updatable.
+-- PostgreSQL throws an error because complex views involving multiple tables, GROUP BY and aggregate functions are not automatically updatable.
 
 
 -- Drop Views
