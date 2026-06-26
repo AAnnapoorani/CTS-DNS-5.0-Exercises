@@ -1,6 +1,4 @@
-#Hands-On 4
 #Task 3 : N+1 Problem Demonstration
-
 
 import psycopg2
 import time
@@ -38,7 +36,8 @@ print("Enrollment Records :", len(enrollments))
 print()
 for enrollment in enrollments:
     student_id = enrollment[1]
-    cursor.execute(""" SELECT first_name,last_name FROM students WHERE student_id=%s;""",(student_id,))
+    cursor.execute(""" SELECT first_name,last_name FROM students WHERE student_id=%s;""",
+    (student_id,))
     student = cursor.fetchone()
     query_count += 1
     print(student[0],student[1],"-> Enrollment ID:",enrollment[0])
@@ -53,7 +52,9 @@ print("Execution Time   :", round(end_time - start_time, 6), "seconds")
 
 print("\n Optimized JOIN Query\n")
 start_time = time.time()
-cursor.execute(""" SELECT e.enrollment_id,s.first_name,s.last_name,c.course_name FROM enrollments e JOIN students s ON e.student_id = s.student_id JOIN courses c ON e.course_id = c.course_id;""")
+cursor.execute(""" SELECT e.enrollment_id,s.first_name,s.last_name,c.course_name 
+FROM enrollments e JOIN students s ON e.student_id = s.student_id 
+JOIN courses c ON e.course_id = c.course_id;""")
 rows = cursor.fetchall()
 end_time = time.time()
 print("JOIN VERSION")
@@ -64,13 +65,9 @@ for row in rows:
 print("\nQueries Executed : 1")
 print("Execution Time   :", round(end_time - start_time, 6), "seconds")
 
-
-
 # Comparison
 
-
 print("\n Comparison \n")
-
 print("N+1 Version")
 print("Queries :", query_count)
 print()
@@ -79,12 +76,12 @@ print("Queries : 1")
 print()
 print("Reduction in Queries :", query_count - 1)
 
-
 # Documentation
 
 """
 1. N+1 Version:
-   One query retrieves all enrollments.One additional query is executed for every enrollment to retrieve student details.
+   One query retrieves all enrollments.One additional query is executed for 
+   every enrollment to retrieve student details.
    Total Queries = 1 + N
 
 2. Optimized Version:
@@ -96,14 +93,14 @@ print("Reduction in Queries :", query_count - 1)
    Optimized JOIN Version = 1 SQL Query
 
 Conclusion:
-    Using JOIN reduces database round trips, improves performance and avoids the N+1 Query Problem.
+    Using JOIN reduces database round trips, improves performance and avoids the N+1 
+    Query Problem.
 """
 
 # Close Connection
 
 cursor.close()
 conn.close()
-
 print("=" * 60)
 print("Database Connection Closed")
 print("=" * 60)
