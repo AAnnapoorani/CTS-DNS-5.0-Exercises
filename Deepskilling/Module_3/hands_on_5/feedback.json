@@ -1,0 +1,136 @@
+[
+  {
+    "student_id": 1,
+    "course_code": "CS101",
+    "semester": "2022-ODD",
+    "rating": 5,
+    "comments": "Excellent teaching",
+    "tags": ["challenging", "well-structured"],
+    "attachments": [
+      {
+        "filename": "notes.pdf",
+        "size_kb": 240
+      }
+    ]
+  },
+  {
+    "student_id": 2,
+    "course_code": "CS101",
+    "semester": "2022-ODD",
+    "rating": 4,
+    "comments": "Very useful",
+    "tags": ["examples", "clear"],
+    "attachments": [
+      {
+        "filename": "assignment.pdf",
+        "size_kb": 180
+      }
+    ]
+  },
+  {
+    "student_id": 5,
+    "course_code": "CS101",
+    "semester": "2022-ODD",
+    "rating": 5,
+    "comments": "Loved the course",
+    "tags": ["challenging", "good-examples"],
+    "attachments": [
+      {
+        "filename": "report.pdf",
+        "size_kb": 120
+      }
+    ]
+  },
+  {
+    "student_id": 1,
+    "course_code": "CS102",
+    "semester": "2022-ODD",
+    "rating": 4,
+    "comments": "Good DB concepts",
+    "tags": ["database", "sql"],
+    "attachments": [
+      {
+        "filename": "db.pdf",
+        "size_kb": 200
+      }
+    ]
+  },
+  {
+    "student_id": 5,
+    "course_code": "CS102",
+    "semester": "2022-ODD",
+    "rating": 3,
+    "comments": "Moderate difficulty",
+    "tags": ["database"],
+    "attachments": [
+      {
+        "filename": "lab.pdf",
+        "size_kb": 100
+      }
+    ]
+  },
+  {
+    "student_id": 3,
+    "course_code": "EC101",
+    "semester": "2021-ODD",
+    "rating": 5,
+    "comments": "Excellent",
+    "tags": ["electronics"],
+    "attachments": [
+      {
+        "filename": "ec.pdf",
+        "size_kb": 90
+      }
+    ]
+  },
+  {
+    "student_id": 4,
+    "course_code": "ME101",
+    "semester": "2023-ODD",
+    "rating": 2,
+    "comments": "Needs improvement",
+    "tags": ["mechanical"],
+    "attachments": [
+      {
+        "filename": "me.pdf",
+        "size_kb": 110
+      }
+    ]
+  },
+  {
+    "student_id": 6,
+    "course_code": "EC101",
+    "semester": "2021-ODD",
+    "rating": 4,
+    "comments": "Interesting",
+    "tags": ["circuits"],
+    "attachments": [
+      {
+        "filename": "circuits.pdf",
+        "size_kb": 220
+      }
+    ]
+  },
+  {
+    "student_id": 8,
+    "course_code": "CS103",
+    "semester": "2022-ODD",
+    "rating": 5,
+    "comments": "Great OOP course",
+    "tags": ["oop", "java"],
+    "attachments": [
+      {
+        "filename": "oop.pdf",
+        "size_kb": 140
+      }
+    ]
+  },
+  {
+    "student_id": 7,
+    "course_code": "ME101",
+    "semester": "2023-ODD",
+    "rating": 3,
+    "comments": "Average course",
+    "tags": ["mechanical"]
+  }
+]
