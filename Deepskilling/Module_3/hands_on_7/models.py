@@ -55,7 +55,7 @@ class Student(Base):
     last_name = Column(String(50), nullable=False)
     email = Column(String(100), unique=True, nullable=False)
     date_of_birth = Column(Date)
-
+    phone_number = Column(String(15))
     department_id = Column(
         Integer,
         ForeignKey("departments.department_id")
@@ -100,7 +100,9 @@ class Course(Base):
         back_populates="course"
     )
 
+# --------------------------------------------------
 # Enrollment Model
+# --------------------------------------------------
 
 class Enrollment(Base):
     __tablename__ = "enrollments"
@@ -131,7 +133,9 @@ class Enrollment(Base):
         back_populates="enrollments"
     )
 
+# --------------------------------------------------
 # Professor Model
+# --------------------------------------------------
 
 class Professor(Base):
     __tablename__ = "professors"
@@ -154,7 +158,9 @@ class Professor(Base):
         back_populates="professors"
     )
 
+# --------------------------------------------------
 # Create Tables
+# --------------------------------------------------
 
 if __name__ == "__main__":
     Base.metadata.create_all(engine)

@@ -1,8 +1,8 @@
-from datetime import date
+#Task 2: CRUD Operations
 
+from datetime import date
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
 from models import (
     Department,
     Student,
@@ -18,10 +18,7 @@ engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# ==================================================
-# STEP 80
 # Create Department
-# ==================================================
 
 cse = Department(
     dept_name="Computer Science",
@@ -34,10 +31,7 @@ session.commit()
 
 print("Department Added")
 
-# ==================================================
-# STEP 81
 # Create Student
-# ==================================================
 
 student1 = Student(
     first_name="Annapoorani",
@@ -53,10 +47,7 @@ session.commit()
 
 print("Student Added")
 
-# ==================================================
-# STEP 82
 # Create Course
-# ==================================================
 
 course1 = Course(
     course_name="Database Systems",
@@ -70,10 +61,7 @@ session.commit()
 
 print("Course Added")
 
-# ==================================================
-# STEP 83
 # Create Enrollment
-# ==================================================
 
 enrollment1 = Enrollment(
     student_id=student1.student_id,
@@ -87,10 +75,7 @@ session.commit()
 
 print("Enrollment Added")
 
-# ==================================================
-# STEP 84
 # Create Professor
-# ==================================================
 
 prof1 = Professor(
     prof_name="Dr. Rajesh",
@@ -104,10 +89,7 @@ session.commit()
 
 print("Professor Added")
 
-# ==================================================
-# STEP 85
 # Read Students
-# ==================================================
 
 print("\nStudents")
 
@@ -122,6 +104,7 @@ for student in students:
 
 session.close()
 
+#Task 3: Eager Loading to Fix N+1
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -139,10 +122,7 @@ engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# ==================================================
-# STEP 86
 # Query Courses
-# ==================================================
 
 print("\nCourses")
 
@@ -154,10 +134,7 @@ for course in courses:
         course.course_name
     )
 
-# ==================================================
-# STEP 87
 # Query Relationships
-# ==================================================
 
 print("\nStudent Enrollments")
 
@@ -169,10 +146,7 @@ for enrollment in student.enrollments:
         enrollment.grade
     )
 
-# ==================================================
-# STEP 88
 # Update Student
-# ==================================================
 
 student = session.query(Student).first()
 
@@ -182,10 +156,7 @@ session.commit()
 
 print("\nStudent Updated")
 
-# ==================================================
-# STEP 89
 # Delete Enrollment
-# ==================================================
 
 enrollment = session.query(Enrollment).first()
 
@@ -195,10 +166,7 @@ session.commit()
 
 print("Enrollment Deleted")
 
-# ==================================================
-# STEP 90
 # Final Query
-# ==================================================
 
 print("\nStudents After Update")
 
