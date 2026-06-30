@@ -11,6 +11,8 @@ This repository contains hands-on exercises and practice files completed during 
   - Contains DSA practice exercises in Python.
 - Module 3: SQL Hands-on
   - Includes SQL scripts and output folders for practical database exercises covering inserts, updates, deletes, joins, subqueries, views, procedures, and transactions.
+- Module 4: Practical Applications
+  - Includes hands-on tasks such as a course management project and related practice exercises.
 
 ### Upskilling
 - ANSI-SQL
@@ -23,8 +25,9 @@ This repository contains hands-on exercises and practice files completed during 
 - SQL and database querying
 - Design patterns
 - Data structures and algorithms
+- Practical application development tasks
 - Hands-on assignments and lab work
 
 ## Purpose
-This folder serves as a learning archive for programming and database exercises completed during the training program.
+This folder serves as a learning archive for programming, database, and practical application exercises completed during the training program.
 
