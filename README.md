@@ -12,13 +12,13 @@ This repository contains hands-on exercises and practice files completed during 
 - Module 3: SQL Hands-on
   - Includes SQL scripts and output folders for practical database exercises covering inserts, updates, deletes, joins, subqueries, views, procedures, and transactions.
 - Module 4: Practical Applications
-  - Includes hands-on tasks such as a course management project and related practice exercises.
+  - Contains a course management project plus multiple hands-on practice folders (`Hands_on_1` through `Hands_on_5`).
 
 ### Upskilling
 - ANSI-SQL
-  - Contains multiple SQL practice files focused on queries, joins, grouping, filtering, and database operations.
+  - Contains SQL practice files focused on queries, joins, grouping, filtering, and database operations.
 - Python
-  - Contains a large set of Python exercise files covering fundamentals, control flow, functions, collections, OOP, file handling, and more.
+  - Contains Python exercise files covering fundamentals, control flow, functions, collections, object-oriented programming, file handling, and more.
 
 ## Topics Covered
 - Python programming practice
@@ -26,8 +26,8 @@ This repository contains hands-on exercises and practice files completed during 
 - Design patterns
 - Data structures and algorithms
 - Practical application development tasks
-- Hands-on assignments and lab work
+- Hands-on lab exercises
 
 ## Purpose
-This folder serves as a learning archive for programming, database, and practical application exercises completed during the training program.
+This repository serves as a learning archive for programming, database, and practical application exercises completed during the training program.
 
