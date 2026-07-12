@@ -11,8 +11,10 @@ This repository contains hands-on exercises and practice files completed during 
   - Contains DSA practice exercises in Python.
 - Module 3: SQL Hands-on
   - Includes SQL scripts and output folders for practical database exercises covering inserts, updates, deletes, joins, subqueries, views, procedures, and transactions.
-- Module 4: Practical Applications
-  - Contains a course management project plus multiple hands-on practice folders (`Hands_on_1` through `Hands_on_5`).
+-Module 4: Backend Frameworks & API Development
+  - Built RESTful APIs using Flask and FastAPI with database integration and CRUD operations.
+  - Implemented API versioning, pagination, filtering, JWT authentication, security best practices, and microservices concepts.
+  - Developed a Course Management System and completed Hands_on_1 to Hands_on_10 covering modern backend development practices.
 
 ### Upskilling
 - ANSI-SQL
