@@ -1,0 +1,11 @@
+<div class="course-section">
+    <h2>Available Courses</h2>
+    <p>
+        <strong>Enrolled Courses:</strong>
+        {{ enrolledCount }}
+    </p>
+    <input type="text" placeholder="Search Courses" [(ngModel)]="searchText" />
+    <div *ngIf="filteredCourses.length === 0"> <p>No courses found.</p> </div>
+    <app-course-card *ngFor="let course of filteredCourses" [course]="course" (enrollCourse)="onEnroll($event)">
+    </app-course-card>
+</div>
