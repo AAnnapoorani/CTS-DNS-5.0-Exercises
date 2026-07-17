@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    Accessibility Audit
+
+    Issues Fixed:
+    1. Added semantic HTML tags
+    2. Added labels for form inputs
+    3. Correct heading hierarchy
+    4. Accessible buttons
+    5. Improved color contrast
+
+    Accessibility Score Improved
+    -->
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header> <h1>Student Portal</h1> </header>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li> <a href="#" aria-current="page">Home</a> </li>
+            <li> <a href="#">Courses</a> </li>
+            <li> <a href="#">Profile</a> </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="search-section">
+            <h2>Search Courses</h2>
+            <label for="search"> Search Courses </label>
+            <input type="text" id="search" placeholder="Search Courses">
+            <p id="resultCount" role="status" aria-live="polite"> 3 courses found </p>
+        </section>
+
+        <section>
+            <h2>Available Courses</h2>
+            <article class="course-card" tabindex="0">
+                <h3>Web Development</h3>
+                <p> Learn HTML, CSS and JavaScript fundamentals. </p>
+                <button> Enroll </button>
+            </article>
+
+            <article class="course-card" tabindex="0">
+                <h3>Data Structures</h3>
+                <p> Master arrays, linked lists, stacks and queues. </p>
+                <button> Enroll </button>
+            </article>
+
+            <article class="course-card" tabindex="0">
+                <h3>Database Management Systems</h3>
+                <p> Learn SQL, normalization and database design. </p>
+                <button> Enroll </button>
+            </article>
+        </section>
+
+        <section>
+            <h2>Student Profile</h2>
+            <p> <strong>Name:</strong> Annapoorani </p>
+            <p> <strong>Department:</strong> Computer Science Engineering </p>
+            <p> <strong>Semester:</strong> 7 </p>
+        </section>
+
+    </main>
+    <footer> <p> © 2026 Student Portal </p> </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
