@@ -1,0 +1,12 @@
+# Module 6: Selenium WebDriver Automation Testing
+# Browser automation and test automation framework
+
+selenium==4.15.2
+webdriver-manager==4.0.1
+pytest==7.4.3
+pandas==2.1.3
+openpyxl==3.11.0
+python-dotenv==1.0.0
+pytest-html==4.1.1
+pytest-xdist==3.5.0
+requests==2.31.0

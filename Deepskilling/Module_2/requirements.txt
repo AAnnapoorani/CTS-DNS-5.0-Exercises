@@ -1,0 +1,6 @@
+# Module 2: Data Structures and Algorithms (DSA)
+# This module focuses on fundamental DSA implementations in Python
+# No external dependencies required - uses only Python standard library
+
+# This is an empty requirements file as all code uses built-in Python
+# Python >= 3.8 recommended

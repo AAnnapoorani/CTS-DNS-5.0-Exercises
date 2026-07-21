@@ -1,0 +1,15 @@
+# Module 5: Web Development - HTML, CSS, and JavaScript
+# Front-end web development
+
+# No Python dependencies required for HTML/CSS
+# This module uses static web technologies
+
+# Optional: For local development server
+# python-http-server
+# or use Python's built-in server:
+# python -m http.server 8000
+
+# Optional: For development and testing
+pytest==7.4.3
+selenium==4.15.2
+webdriver-manager==4.0.1

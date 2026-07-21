@@ -1,0 +1,4 @@
+name,email,password,company,website,country,city,address1,address2,state,zip
+Annapoorani,annapoorani@test.com,Password@123,Cognizant,https://www.cognizant.com,India,Chennai,GST Road,Tambaram,Tamil Nadu,600045
+John,john@test.com,Password@123,CTS,https://www.cts.com,India,Bangalore,MG Road,Indiranagar,Karnataka,560001
+Alice,alice@test.com,Password@123,Infosys,https://www.infosys.com,India,Hyderabad,Hitech City,Gachibowli,Telangana,500081
